@@ -1,2 +1,2 @@
 # journalize.github.io
-A unique journal app to jot down all your thoughts
+A website for the Journalize app which allows you to create digital journals using the browser. The website provides an easy and minimalistic interface to create, delete, and edit journals.
