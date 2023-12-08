@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    margin-top: 10%;
+}
+
+img{
+    height: 2em;
+    width: 2em;
+
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;  
+    margin-top: 1em; 
+    margin-bottom: 0.4em;
+}
+
+h2{
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;  
+    margin-top: 0em;
+    color: rgb(66, 66, 66);
+}
+
+h3{
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;  
+    width: 12em;
+    text-align: center;
+
+}
+
+p{
+    font-size: 0.95rem;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;  
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+
+a{
+    color: blue;
+    font-weight: 400;
+}
+
+.logo{
+    height: 4em;
+    width: 4em;
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.signemail{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+    min-width: 20em;
+    max-height: 3.4em;
+    width: 16%;
+    border-radius: 0.6em;
+    
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    cursor: pointer;
+    background-color: rgb(243, 241, 241);
+    border: 0px solid blue;
+}
+
+.signgoogle{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+    min-width: 20em;
+    max-height: 3.4em;
+    width: 16%;
+    border-radius: 0.6em;
+    
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    cursor: pointer;
+    background-color: rgb(243, 241, 241);
+    border: 0px solid blue;
+}
+
+.signfacebook{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+    min-width: 20em;
+    max-height: 3.4em;
+    width: 16%;
+    border-radius: 0.6em;
+    
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    cursor: pointer;
+    background-color: rgb(243, 241, 241);
+    border: 0px solid blue;
+}
+
+#after:hover{
+    background-color: rgb(232, 232, 232);
+    transition: all 0.4s;
+}
+
+#email, #google, #facebook{
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.terms{
+    text-align: center;
+    width: 18em;
+}
+
