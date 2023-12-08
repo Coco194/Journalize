@@ -5,194 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journalize</title>
     <link rel="shortcut icon" type="x-icon" href="Images/quill.png">
-    <link rel="stylesheet" href="home.css">
-    <script src="home.js"></script>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/index-media.css">
 
-    <!--Gabarito font-->
+    <!--Inter font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
-
-    <!--Lato font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <div>
-            <a href="home.html"><img src="Images/quill.png" alt="logo" class="logo"></a>
+            <a href="index.html"><img src="Images/quill.png" alt="logo" class="logo"></a>
         </div>
         
         <nav>
             <ul class="navlinks">
-                <a href="about.html"><li>About</li></a>
-                <a href="#"><li>Pricing</li></a> 
-                <a href="#"><li id="navlinkshidden1">Donate</li></a> 
-                <a href=""><li>Install</li></a>
+                <a href="index.html"><li>Home</li></a>
+                <a href="#price"><li>Pricing</li></a> 
+                <a href="support.html"><li>Support</li></a> 
+                <a href="#"><li>Install</li></a>
             </ul>
-
         </nav>
-        <a href="signin.html" target="_blank"><button class="btn1">Sign in</button></a>
         
+        <ul class="navlinks">
+            <a href="signin.html" target="_blank"><li id="btn1">Sign in</li></a>
+        </ul>
     </header>
 
-    <section class="intro">
-        <div>
-            <img src="Images/quill.png" alt="logo" class="intrologo">
-            <h1 class="topic">Journalize</h1>
-            <p class="topictext">Your digital journal for capturing and <br> reflecting on your life with effortless journaling <br> for your everyday story</p>
-            
-            <div class="cta" >
-                <a href="#" class="ctabutton">Download now</a>
-                <img src="Images/download.png" alt="" height="26em" width="26em" style="padding-left: 0%; padding-right: 0%;"> <!--"https://www.flaticon.com/free-icons/ui", Ui icons created by Graphics Plazza - Flaticon-->
-                </a>
-            </div>
-        </div>
+    <section class="mainparent">
+            <div class="mainchild2">
+                <img src="Images/quill.png" alt="logo" class="intrologo">
+                <h1 class="topic">Journalize</h1>
+                <p class="topictext">Your digital journal for capturing and reflecting with user friendly interface and powerful features</p>
 
-        <div class="right">
-            <img src="Images/iphone.jpg" alt="iphone" id="mockup">
-        </div>
+                <div class="cta" onclick="location.href='index.html'">
+                    <h2>Download now</h2>
+                    <img src="Images/download.png" alt="" height="28em" width="28em" style="padding-left: 0%; padding-right: 0%;"> <!--"https://www.flaticon.com/free-icons/ui", Ui icons created by Graphics Plazza - Flaticon-->
+                    </a>
+                </div>
+            </div>
+
+            <div class="mainchild2">
+                <img src="Images/iphone.jpg" alt="iphone" id="mockup">
+            </div>
+
     </section>
 
     <section>
         <div class="features">
-            <div class="left">
+            <div class="featureschild1">
                 <img src="Images/iphone.jpg" alt="iphone" id="mockup">
             </div>    
             
-            <div>
-                <div class="insighttext">
+            <div class="featureschild2">
+                <div>
+                    <h1>Get <span id="texthighlight">organized</span>, <br> stay on top of things</h1>
+                </div>
+                
+                <div>
                     <div class="container">
-                        <img src="Images/heart.png">
-                        <h3>Favourite</h3>     
+                        <img src="Images/heart.png"> <!--"https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by rizal2109 - Flaticon-->
+                        <h2>Favourite</h2>     
                     </div>
                     <div>
                         <p>Have your favourites easily accessible and bookmarked</p>
                     </div>
                 </div>
 
-                <div class="insighttext">
+                <div>
                     <div class="container">
-                        <img src="Images/search.png" alt="">
-                        <h3>Search</h3>
+                        <img src="Images/search.png" alt=""> <!--"https://www.flaticon.com/free-icons/magnifying-glass" title="magnifying glass icons">Magnifying glass icons created by Anggara - Flaticon-->
+                        <h2>Search</h2>
                     </div>
                     <div>
-                        <p>Ability to search through your journals using keywords</p>
+                        <p>Search through your journals using keywords and sort your journals</p>
                     </div>
                 </div>
 
-                <div class="insighttext">
+                <div>
                     <div class="container">
-                        <img src="Images/hashtag.png" alt="">
-                        <h3>Tagging</h3>
+                        <img src="Images/hashtag.png" alt=""> <!--"https://www.flaticon.com/free-icons/hashtag" title="hashtag icons">Hashtag icons created by Ch.designer - Flaticon-->
+                        <h2>Tagging</h2>
                     </div>
                     <div>
-                        <p>Users can tag their journals with custom tags</p>
+                        <p>Users can tag their journals with custom tags and access them later</p>
                     </div>
                 </div>
             </div>
-
         </div>
-
-
     </section>
 
     <!--Insights - Time spent, number of words per day, day when you journal-->
-    <!--<div style="width: 1px; height: 50px; background-color: rgb(34, 34, 34); margin-left: auto; margin-right: auto;">-->
+    
     <section>
-        <div class="benefitsection">
-
-            <h1 id="benefittopic">Journaling for a<br><span id="benefittopichighlight">better </span> you</h1>
-
-            <div class="benefitcontainer">
-                <div class="flexleft">
-                    <h1>20%</h1>
-                </div>
-                <div style="width: 1px; height: 100px; background-color: rgb(255, 0, 0); margin-left: auto; margin-right: auto;"></div> 
-                <div class="flexright">
-                    <div class="flexelements">
-                        <div class="flexcontainer">
-                            <img src="Images/heart.png">
-                            <h3>Increase in mood</h3>     
-                        </div>
-                        <div>
-                            <p>Research have shown that writing down your thoughts boosts your mood</p>
-                        </div>
-                    </div>
+        <div class="flextop">
+            <div class="flextopchild1">
+                <h1>User-friendly UI with <span id="texthighlight">powerful</span> features</h1>
+                <p>Journalize is a user-friendly digital journal app made to make your life easier</p>  
+                <div class="learnbtn">
+                    <div>Learn more</div>
                 </div>
             </div>
-
-            <div class="benefitcontainer">
-                <div class="flexleft">
-                    <h1>50%</h1>
-                </div>
-                <div style="width: 1px; height: 100px; background-color: rgb(255, 0, 0); margin-left: auto; margin-right: auto;"></div> 
-                <div class="flexright">
-                    <div class="flexelements">
-                        <div class="flexcontainer">
-                            <img src="Images/heart.png">
-                            <h3>Lowers anxiety levels</h3>     
-                        </div>
-                        <div>
-                            <p>Reduces stress and lowers your anxiety levels up to 50%</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="flextopchild2">
+                <img src="Images/iphone.jpg" alt="" id="mockup">
             </div>
-
-            <div class="benefitcontainer">
-                <div class="flexleft">
-                    <h1>30</h1>
-                    <h2 style="margin-bottom: 0; margin-left: 0em;">Days</h2>
-                </div>
-                <div style="width: 1px; height: 100px; background-color: rgb(255, 0, 0); margin-left: auto; margin-right: auto;"></div> 
-                <div class="flexright">
-                    <div class="flexelements">
-                        <div class="flexcontainer">
-                            <img src="Images/heart.png">
-                            <h3>Free trial</h3>     
-                        </div>
-                        <div>
-                            <p>Sign up for a free trial and experience the benefits today.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <section >
+    <section>
+        <div class="flexbottom">
+            <div class="flexbottomchild2">
+                <img src="Images/iphone.jpg" alt="" id="mockup">
+            </div>
+            <div class="flexbottomchild1">
+                <h1>Used by many and <span id="texthighlight">loved</span> by many</h1>
+                <p>The use of minimalistic and simplistic design makes journaling much easier and quicker</p>  
+                <div class="learnbtn">
+                    <div>Try demo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--And people love it (cards with figures)-->
+    <section>
+        <h1 id="tilestopic">Not sure what to note down ?</h1>
         <div class="tiles">
             <div class="reflect"> 
-                <img src="Images/heart.png" alt="" height="50px" width="50px"> 
+                <img src="Images/love.png" alt="" class="tileimg"> <!--"https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Freepik - Flaticon-->
                 <h1>Memories</h1>
-                <h3>Collect all your memorable and important life <br> events and revisit them.</h3>
+                <h3>Collect all your memorable and important life events.</h3>
             </div>
 
             <div class="share">
-                <img src="Images/pin.png" alt="" height="50px" width="50px"> 
+                <img src="Images/pin.png" alt="" class="tileimg"> <!--"https://www.flaticon.com/free-icons/pin" title="pin icons">Pin icons created by twentyfour - Flaticon-->
                 <h1>Notes</h1>
-                <h3>Jot down all your notes, to do lists, budgets<br>  and  much more.</h3>
+                <h3>Jot down all your notes, to do lists and  much more.</h3>
             </div>   
 
-
             <div class="note">
-                <img src="Images/leaf.png" alt="" height="50px" width="50px"> 
+                <img src="Images/leaf.png" alt="" class="tileimg"> <!--"https://www.flaticon.com/free-icons/leaf" title="leaf icons">Leaf icons created by Freepik - Flaticon-->
                 <h1>Growth</h1>
-                <h3>Prioritize life goals to ensure that you are <br> making progress.</h3>
+                <h3>Prioritize life goals and ensure that you are making progress.</h3>
             </div>    
 
             <div class="focus">
-                <img src="Images/moon.png" alt="" height="50px" width="50px">  
+                <img src="Images/moon.png" alt="" class="tileimg"> <!--"https://www.flaticon.com/free-icons/moon" title="moon icons">Moon icons created by Freepik - Flaticon-->
                 <h1>Dreams</h1>
-                <h3>Keep track of your dreams and daily entries <br> in one place.</h3>
+                <h3>Keep track of all your dreams and daily entries organized in one place and revisit them.</h3>
             </div>  
 
             <div class="organize">
-                <img src="Images/acorn.png" alt="" height="50px" width="50px"> 
+                <img src="Images/acorn.png" alt="" class="tileimg"> <!--"https://www.flaticon.com/free-icons/acorn" title="acorn icons">Acorn icons created by Smashicons - Flaticon-->
                 <h1>Wisdom</h1>
                 <h3>Collect and reflect upon quotes, lessons, proverbs and excerpts.</h3>
             </div>
@@ -201,68 +167,225 @@
     </section>
 
     <section>
-        <div class="bottomflex">
-            <div class="bottomtext">
-                <h1>Sign up today to gain early access and for a <br> seamless journaling experience</h1>
-                <div class="bottomcta">
-                    <a href="#">Sign up</a>
+        <div class="comment">
+            <h1 id="commenttopic">What people are saying</h1>
+            <div class="commentparent">
+                <div class="commentchild">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit repellendus et cupiditate ex!</p>
+                    <h1>Someone</h1>
+                    <h2>Profession</h2>
                 </div>
+                <div class="commentchild">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit repellendus et cupiditate ex!</p>
+                    <h1>Someone</h1>
+                    <h2>Profession</h2>
+                </div>
+                <div class="commentchild">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit repellendus et cupiditate ex!</p>
+                    <h1>Someone</h1>
+                    <h2>Profession</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="price"> <!--<a href="https://www.flaticon.com/free-icons/tick" title="tick icons">Tick icons created by Kiranshastry - Flaticon</a>-->
+        
+        <div class="pricingheading">
+            <h1 class="pricingtopic">Plans and Pricing</h1>
+            <!--<h2 class="pricingsubtopic">Pick a plan, cancel anytime</h2>-->
+        </div>
+        <div class="pricingparent">
+            
+            <div class="pricingchild">
+                <h1>Free</h1>
+                <p>Equipped with all the basics you need to get started</p>
+                <h2>$0</h2>
+                <p>per month</p>
+                
+                <div>
+                    <div class="pricingtext">
+                        <img src="Images/right.png" alt="" width="16em" height="16em"> <!--"https://www.flaticon.com/free-icons/tick" title="tick icons">Tick icons created by Freepik - Flaticon-->
+                        <p>Unlimited journals</p>
+                    </div>
+                    <div class="pricingtext">
+                        <img src="Images/right.png" alt="" width="16em" height="16em"> <!--"https://www.flaticon.com/free-icons/tick" title="tick icons">Tick icons created by Freepik - Flaticon-->
+                        <p>Basic text editing</p>
+                    </div>
+                    <div class="pricingtext">
+                        <img src="Images/wrongedit.png" alt="" width="15em" height="15em"> <!--"https://www.flaticon.com/free-icons/wrong" title="wrong icons">Wrong icons created by Cuputo - Flaticon-->
+                        <p>Templates</p>
+                    </div>
+                    <div class="pricingtext">
+                        <img src="Images/wrongedit.png" alt="" width="15em" height="15em"> <!--"https://www.flaticon.com/free-icons/wrong" title="wrong icons">Wrong icons created by Cuputo - Flaticon-->
+                        <p>Collaboration and sharing</p>
+                    </div>
+                    <div class="pricingtext">
+                        <img src="Images/wrongedit.png" alt="" width="15em" height="15em"> <!--"https://www.flaticon.com/free-icons/wrong" title="wrong icons">Wrong icons created by Cuputo - Flaticon-->
+                        <p>Analytics and insights</p>
+                    </div>
+                </div>
+
+                <div class="pricingbutton" onclick="location.href='index.html'">
+                    Choose plan
+                </div>
+            </div>
+
+            <div class="pricingchild">
+                <h1>Standard</h1>
+                <p>Cloud storage, metrics, sync and export files and much more</p>
+                <h2>$20</h2>
+                <p>per month</p>
+
+                <div>
+                    <div class="pricingtext">
+                        <img src="Images/right.png" alt="" width="16em" height="16em"> <!--"https://www.flaticon.com/free-icons/tick" title="tick icons">Tick icons created by Freepik - Flaticon-->
+                        <p>Unlimited journals</p>
+                    </div>
+                    <div class="pricingtext">
+                        <img src="Images/right.png" alt="" width="16em" height="16em"> <!--"https://www.flaticon.com/free-icons/tick" title="tick icons">Tick icons created by Freepik - Flaticon-->
+                        <p>Basic text editing</p>
+                    </div>
+                    <div class="pricingtext">
+                        <img src="Images/right.png" alt="" width="16em" height="16em"> <!--"https://www.flaticon.com/free-icons/tick" title="tick icons">Tick icons created by Freepik - Flaticon-->
+                        <p>Custom templates</p>
+                    </div>
+                    <div class="pricingtext">
+                        <img src="Images/right.png" alt="" width="16em" height="16em"> <!--"https://www.flaticon.com/free-icons/tick" title="tick icons">Tick icons created by Freepik - Flaticon-->
+                        <p>Collaboration and sharing</p>
+                    </div>
+                    <div class="pricingtext">
+                        <img src="Images/right.png" alt="" width="16em" height="16em"> <!--"https://www.flaticon.com/free-icons/tick" title="tick icons">Tick icons created by Freepik - Flaticon-->
+                        <p>Analytics and insights</p>
+                    </div>
+                </div>
+                <div class="pricingbutton" onclick="location.href='index.html'">
+                   Choose plan
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="accordion">
+            <div class="contentbox">
+                <h1>Frequently asked questions</h1>
+                <div class="label">
+                    <h2>Do we get a free premium trial?</h2>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="0" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <div class="content">
+                    <p>Yes we do offer a 30 day premium trial per account </p>
+                </div>
+            </div>
+            <div class="contentbox">
+                <div class="label">
+                    <h2>Does the app need internet?</h2>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="0" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <div class="content">
+                    <p>Yes you can but you need either mobile data or wifi to sync your journals over other devices.</p>
+                </div>
+            </div>
+            <div class="contentbox">
+                <div class="label">
+                    <h2>Do we have the app on all platforms?</h2>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="0" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <div class="content">
+                    <p>Yes, Journalize is available on all platforms including Windows, Android, iOS.</p>
+                </div>
+            </div>
+            <div class="contentbox">
+                <div class="label">
+                    <h2>How do I report a bug in the app?</h2>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="0" stroke-linecap="round" ></path>
+                    </svg>
+                </div>
+                <div class="content">
+                    <p>You can report the bug through the by contacting us through the methods mentioned above</p>
+                </div>
+            </div>
+            <div class="contentbox">
+                <div class="label">
+                    <h2>how do I change my login email?</h2>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="0" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <div class="content">
+                    <p>You can send us an email regarding this matter and we will get back to you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="bottomtext" >
+            <!--<h1>Sign up today to gain early access and for a <br> seamless journaling experience</h1>-->
+            <h1>Get started with Journalize today</h1>
+            <p>Download Journalize on iOS or Android</p>
+            <div class="bottomcta">
+                <div>Get started</div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="footercontainer">
-            
-            <div class="footercontent">
-                <ul class="footerlist">
-                    <img src="Images/quill.png" alt="" height="50em" width="50em" style="margin-left: -13em;">
-                    <h3></h3>
-                    <li style="line-height: 1.3em; padding-right: 3em;">ambatukam sigma ohio fanux tax zyzz asf asdaasdaasddasdad asdada asdada asda asda</li>
+            <div id="footerdescription">
+                <ul class="footerleft">
+                    <div class="footerleftflex">
+                       <img src="Images/quill.png" alt=""> 
+                       <h2>Journalize</h2>
+                    </div>
+                    <li>Journalize is a digital journal with user friendly interface and powerful features</li>
                 </ul>
             </div>
-            <div class="footercontent">
-                <ul class="footerlist">
+
+            <div>
+                <ul class="footerright">
                     <h3>Browse</h3>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Services</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#price">Pricing</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="#">Install</a></li>
                 </ul>
             </div>
-            <div class="footercontent">
-                <ul class="footerlist">
-                    <h3>Services</h3>
-                    <li>Support</li>
-                    <li>Report bugs</li>
-                    <li>Blog</li>
+
+            <div>
+                <ul class="footerright">
+                    <h3>Information</h3>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">License</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Privacy policy</a></li>
                 </ul>
             </div>
-            <div class="footercontent">
-                <ul class="footerlist">
-                    <h3>Contact</h3>
-                    <li>Alburquerque, New Mexico </li>
-                    <li>Quill@gmail.com</li>
-                    <li>904-929-3456</li>
-                </ul>
-            </div>
-            <div class="footercontent">
-                <ul class="footerlist">
-                    <h3>Socials</h3>
-                    <li><img src="Images/instagram.png" alt="" class="social-icons"></li>
-                    <li><img src="Images/twitter.png" alt="" class="social-icons"></li>
-                    <li><img src="Images/facebook.png" alt="" class="social-icons"></li>
-                </ul>
-            </div>
-            
-            
         </div>
-        <div class="bottombar">
-            <div class="copyrightflex">
-                <p>Copyright 2023. </p>
-                <p>privacy policy</p>   
-            </div>
-            
+
+        <div class="footersocial">
+            <img src="Images/google.png" alt="" class="social-icons">
+            <img src="Images/instagram.png" alt="" class="social-icons">
+            <img src="Images/twitter.png" alt="" class="social-icons">
+            <img src="Images/facebook.png" alt="" class="social-icons">
+        </div>
+
+        <div class="copyrightflex">
+            <p>© 2023 Journalize app, LLC</p>
+            <p>. All rights reserved</p>   
         </div>
     </footer>
+
+<script defer src="JS/home.js"></script>
 </body>
 </html>
